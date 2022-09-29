@@ -37,7 +37,7 @@ body {
   [class*=".show-data img"] {
     margin: auto;
   }
-  [class*=".show-info <p></p>"] {
+  [class*=".show-info p"] {
     text-align: center;
     padding: 10px;
   }
