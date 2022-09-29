@@ -25,19 +25,19 @@ body {
 }
 /*What is media query? Help from: https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
 @media only screen and (min-width: 800px) {
-  [class*="show-data"] {
+  .show-data {
     display: flex;
   }
-  [class*="show-info"] {
+  .show-info {
     padding: 10px;
   }
 }
 
 @media only screen and (max-width: 800px) {
-  [class*=".show-data img"] {
+  .show-data img {
     margin: auto;
   }
-  [class*=".show-info p"] {
+  .show-info p {
     text-align: center;
     padding: 10px;
   }
