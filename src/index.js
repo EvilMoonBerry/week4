@@ -8,27 +8,15 @@ async function submmit(event) {
   const url = "https://api.tvmaze.com/search/shows?q=" + names;
   const dataPromise = await fetch(url);
   const data = await dataPromise.json();
-  //console.log(data.show);
-  let titles = [];
-  let summaries = [];
-  let images = [];
-
-  //const body = document.getElementById("body");
-
-  //let x = show.image.medium;
-  //console.log(x);
-  //console.log(data.show.name);
-
-  /*dataPromise.forEach((title) => {
-    titles.push(title.name);
-  });*/
 
   for (let i = 0; i < data.length; i++) {
     let img = document.createElement("img");
     let h1 = document.createElement("h1");
 
-    let div1 = document.createElement("div").setAttribute("class", "show-data");
-    let div2 = document.createElement("div").setAttribute("class", "show-info");
+    let div1 = document.createElement("div");
+    let div2 = document.createElement("div");
+    div1.className = "show-data";
+    div2.calssName = "show-info";
 
     if (data[i].show.image !== null) {
       img.src = data[i].show.image.medium;
@@ -42,11 +30,6 @@ async function submmit(event) {
     div1.appendChild(div2);
     document.body.appendChild(div1);
   }
-  console.log(summaries);
-  console.log(titles);
-  console.log(images);
 
   event.preventDefault();
 }
-
-
