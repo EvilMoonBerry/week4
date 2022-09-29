@@ -27,8 +27,8 @@ async function submmit(event) {
     let img = document.createElement("img");
     let h1 = document.createElement("h1");
 
-    let div1 = document.createElement("div");
-    let div2 = document.createElement("div");
+    let div1 = document.createElement("div").setAttribute("class", "show-data");
+    let div2 = document.createElement("div").setAttribute("class", "show-info");
 
     if (data[i].show.image !== null) {
       img.src = data[i].show.image.medium;
