@@ -23,7 +23,9 @@ body {
 .show-info {
   width: 100%;
 }
-/*What is media query? Help from: https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
+
+/*got help from course assistent on this */
+/*What is media query? Help from: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors*/
 @media only screen and (min-width: 800px) {
   .show-data {
     display: flex;
